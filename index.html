@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:ital,wght@0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div
+      id="carousel-desktop"
+      class="carousel slide carousel-desktop"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner-desk">
+        <img
+          src="images/icon-close.svg"
+          class="carousel-close"
+          alt="carousel-close"
+          srcset=""
+        />
+        <div class="carousel-item active carousel-desk-item">
+          <img src="images/image-product-1.jpg" alt="Image 1" />
+        </div>
+        <div class="carousel-item carousel-desk-item">
+          <img src="images/image-product-2.jpg" alt="Image 2" />
+        </div>
+        <div class="carousel-item carousel-desk-item">
+          <img src="images/image-product-3.jpg" alt="Image 3" />
+        </div>
+        <div class="carousel-item carousel-desk-item">
+          <img src="images/image-product-4.jpg" alt="Image 4 " />
+        </div>
+        <button
+          class="carousel-control-prev carousel-desk-control carousel-desk-control-prev"
+          type="button"
+          data-bs-target="#carousel-desktop"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next carousel-desk-control carousel-desk-control-next"
+          type="button"
+          data-bs-target="#carousel-desktop"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="thumbnail-container-desk">
+        <img
+          src="images/image-product-1-thumbnail.jpg"
+          class="thumbnail-desk thumbnail"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="images/image-product-2-thumbnail.jpg"
+          class="thumbnail-desk thumbnail"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="images/image-product-3-thumbnail.jpg"
+          class="thumbnail-desk thumbnail"
+          alt=""
+          srcset=""
+        />
+        <img
+          src="images/image-product-4-thumbnail.jpg"
+          class="thumbnail-desk thumbnail"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+    <!-- Toggler button for small screens -->
+    <header>
+      <nav class="navbar navbar-expand-sm">
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon">
+            <img
+              src="images/icon-menu.svg"
+              class="icon-menu"
+              alt=""
+              srcset=""
+            />
+          </span>
+        </button>
+        <a href="#" class="logo-bookmark">
+          <img class="logo-bookmark" src="images/logo.svg" alt="Logo" />
+        </a>
+        <div class="user-profile">
+          <img src="images/icon-cart.svg" class="icon-cart" />
+          <div class="cart-product-count"></div>
+          <img src="images/image-avatar.png" class="icon-avatar" />
+        </div>
+
+        <!-- Navbar links -->
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <img src="images/icon-close.svg" class="icon-close" />
+            <li class="nav-item">
+              <a class="nav-link" href="#">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="carousel-container">
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <hr />
+          <div class="cart-content">
+            <p class="cart-empty">your cart is empty</p>
+            <div class="cart-product">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="images/image-product-1-thumbnail.jpg"
+                    class="product-thumbnail product-1-thumbnail"
+                    alt=""
+                    srcset=""
+                  />
+                </div>
+                <div class="price-delete">
+                  <div class="cart-product-content">
+                    <span>Fall Limited Edition Sneakers</span>
+                    <span class="price-checkout"></span>
+                  </div>
+                  <div class="icon-delete-container">
+                    <img
+                      src="images/icon-delete.svg"
+                      class="icon-delete"
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="product-checkout">Checkout</button>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active original-carousel">
+              <img
+                src="images/image-product-1.jpg"
+                class="d-block w-100 product"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item original-carousel">
+              <img
+                src="images/image-product-2.jpg"
+                class="d-block w-100 product"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item original-carousel">
+              <img
+                src="images/image-product-3.jpg"
+                class="d-block w-100 product"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item original-carousel">
+              <img
+                src="images/image-product-4.jpg"
+                class="d-block w-100 product"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- prettier-ignore -->
+        <div class="thumbnail-container">
+          <img src="images/image-product-1-thumbnail.jpg" class="thumbnail" alt="" srcset="" />
+          <img src="images/image-product-2-thumbnail.jpg" class="thumbnail" alt="" srcset="" />
+          <img src="images/image-product-3-thumbnail.jpg" class="thumbnail" alt="" srcset="" />
+          <img src="images/image-product-4-thumbnail.jpg" class="thumbnail" alt="" srcset="" />
+        </div>
+      </div>
+
+      <div class="container-box">
+        <h5>SNEAKER COMPANY</h5>
+        <h1>Fall Limited Edition Sneakers</h1>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price">
+          <strong class="price-product"> $125.00</strong>
+          <div class="discount-percentage">50%</div>
+          <div class="price-strike"><strike> $250.00</strike></div>
+        </div>
+        <div class="product-count-container">
+          <img src="images/icon-minus.svg" class="img-minus" />
+          <div class="product-count">0</div>
+          <img src="images/icon-plus.svg" class="img-plus" />
+        </div>
+        <button type="button" class="add-to-cart">
+          <img src="images/icon-cart.svg" class="button-cart" /> Add to cart
+        </button>
+      </div>
+    </main>
+
+    <p class="attribution">
+      <span class="challenge"
+        >Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >.
+      </span>
+      <span class="dev"> Coded by <a href="#">vishwasridhar</a>.</span>
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
